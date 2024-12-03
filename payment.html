@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link para Javascrip - NAO EXCLUIR -->
+   <script type="module" src="./scripts/home.js" defer></script>
+   <script src="./scripts/payment.js" type="module" defer></script>
+   <script src="scripts/darkmode.js" defer></script>
+   <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+   <script src="scripts/swtich_theme.js" defer></script>
+   <!--  -->
+  <link rel="stylesheet" href="styles/body.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <title>Pagamento</title>
+</head>
+<body class="">
+  <!-- Header -->
+<header id="header-page">
+    <!-- Bloco de Texto Cinza no topo da tela -->
+<div id="header-title-block">
+  <div class="container">
+    <div class="text-header-block-container">
+          <p class="bold-text">Campinas - SP</p>
+          <p class="bold-text">
+            Compras
+            <span class="bold-text">acima de R$100,00</span>
+            ganham
+            <span class="bold-text">5% de desconto</span>
+            <span class="bold-text">á vista</span>
+          </p>
+          <a href="speakwithus.html" class="bold-text">Precisa de Ajuda?</a>
+    </div>
+  </div>
+</div>
+    <!-- Fim bloco de texto -->
+
+    <!-- Logo e form de pesquisa, carrinho de compras -->
+<section class="container">
+        <div id="panel-content-header">
+          <a href="index.html" id="logo-container"><img src="images/logo.png" alt="Logo IluminaCasa" id="image-logo">IluminaCasa</a>
+          <div class="input-wrapper">
+              <div id="wrapper-to-input"><img src="images/search_icon.png" alt="Pesquisar" class="search-icon"></div>
+              <input type="text" id="search" placeholder="Pesquise aqui!">
+          </div>
+          <a href="adm.html" id="cart-icon" style="text-decoration: none;"><i class="ph ph-user"></i></a>
+          <a href="checkout.html" id="cart-icon" style="text-decoration: none;"><i class="ph ph-shopping-cart"></i></a>
+          <button id="switch-theme">
+            <i class="ph ph-moon" id="moon"></i>
+            <i class="ph ph-sun" id="sun"></i>
+          </button>
+        </div>
+      </section>
+
+<section id="nav-section">
+    <nav id="navbar-page">
+      <ul id="navbar-list">
+        <a href="products.html"><li>Ambientes</li></a>
+        <a href="products.html"><li>Promoções</li></a>
+        <a href="products.html"><li>Produtos</li></a>
+        <a href="speakwithus.html"><li>Suporte</li></a>
+        <a href="aboutus.html"><li>Sobre Nós</li></a>
+      </ul>
+    </nav>
+</section>
+</header>
+  <!-- Componente Formulario conclusao de compra -->
+  <main class="product main-content container">
+    <div class="product text-container">
+      <h2 class="main-text">Checkout</h2>
+      <p>Verifique os itens do carrinho e finalize agora</p>
+    </div>
+
+    <section class="product text-container">
+      <div id="billing">
+        <div class="grid_col_1">
+          <form action="">
+            <h2>Seus Dados:</h2>
+            <div class="form-fields">
+              <Div class="form-field">
+                <label for="e-mail">E-mail</label>
+                <input type="email" name="e-mail" id="e-mail" placeholder="e-mail" required>
+              </Div>
+              <div class="form-group container-flex">
+                <Div class="form-field">
+                  <label for="name">Nome</label>
+                  <input type="text" name="name" id="name" placeholder="Nome">
+                </Div>
+                <Div class="form-field">
+                  <label for="Sobrenome">Sobrenome</label>
+                  <input type="text" name="surname" id="surname" placeholder="Sobrenome">
+                </Div>
+              </div>
+
+              <div class="form-group container-flex">
+                <Div class="form-field">
+                  <label for="phone">Telefone</label>
+                  <input type="text" name="phone" id="phone" placeholder="Telefone com DDD">
+                </Div>
+                <Div class="form-field">
+                  <label for="CPF">CPF</label>
+                  <input type="text" name="CPF" id="CPF" placeholder="CPF">
+                </Div>
+              </div>
+              <div class="form-group container-flex">
+                <Div class="form-field">
+                  <label for="address">Logradouro</label>
+                  <input type="text" name="address" id="address" placeholder="Logradouro">
+                </Div>
+                <Div class="form-field cep">
+                  <label for="zip">CEP</label>
+                  <input type="text" name="zip" id="zip" placeholder="CEP">
+                </Div>
+              </div>
+
+
+              <div class="form-group container-flex">
+                <Div class="form-field">
+                  <label for="address">Nº</label>
+                  <input type="text" name="number" id="number" placeholder="Nº">
+                </Div>
+                <Div class="form-field">
+                  <label for="address_2">Complemento</label>
+                  <input type="address_2" name="address_2" id="address_2" placeholder="Complemento">
+                </Div>
+                <Div class="form-field">
+                  <label for="neighborhood">Bairro</label>
+                  <input type="text" name="neighborhood" id="neighborhood" placeholder="Bairro">
+                </div>
+              </div>
+
+              <div class="form-group container-flex">
+
+                <Div class="form-field">
+                  <label for="city">Cidade</label>
+                  <input type="text" name="city" id="city" placeholder="Cidade">
+                </Div>
+                <Div class="form-field uf">
+                  <label for="state">Estado</label>
+                  <select id="estado" name="UF">
+                    <option value="" selected>Selecione...</option>
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    <option value="AM">AM</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MT">MT</option>
+                    <option value="MS">MS</option>
+                    <option value="MG">MG</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="PR">PR</option>
+                    <option value="PE">PE</option>
+                    <option value="PI">PI</option>
+                    <option value="RJ">RJ</option>
+                    <option value="RN">RN</option>
+                    <option value="RS">RS</option>
+                    <option value="RO">RO</option>
+                    <option value="RR">RR</option>
+                    <option value="SC">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="SE">SE</option>
+                    <option value="TO">TO</option>
+                  </select>
+                </Div>
+
+
+              </Div>
+
+
+
+
+            </div>
+
+          </form>
+
+        </div>
+
+        <div class="grid_col_2">
+
+          <div class="total_container container-flex column">
+            <div class="total container-flex">
+              <h3>SUBTOTAL</h3>
+              <H3 id="subtotal">R$ 0.00</H3>
+            </div>
+            <div class="total container-flex">
+              <h3>Frete</h3>
+              <H3 id="frete">R$ 0.00</H3>
+            </div>
+            <div class="total container-flex">
+              <h3>Total</h3>
+              <H3 id="totalCarrinho">R$ 0.00</H3>
+            </div>
+
+          </div>
+
+          <button class="button checkout_btn">Finalizar</button>
+          <form class="container-flex">
+            <div class="pay-method">
+              <input type="radio" name="pagamento" id="credito" checked><label for="credito">Crédito</label>
+            </div>
+            <div class="pay-method">
+              <input type="radio" name="pagamento" id="debito"><label for="debito">Débito</label>
+            </div>
+            <div class="pay-method">
+              <input type="radio" name="pagamento" id="pix"><label for="pix">PIX</label>
+            </div>
+            <div class="pay-method">
+              <input type="radio" name="pagamento" id="bol"><label for="bol">Boleto</label>
+            </div>
+          </form>
+          <form class="payment">
+            <div class="form-field">
+              <label for="nome_cartao">Nome no Cartão:</label>
+              <input type="text" id="nome_cartao" name="nome_cartao" required>
+            </div>
+
+            <div class="form-field">
+              <label for="numero_cartao">Número do Cartão:</label>
+              <input type="text" id="numero_cartao" name="numero_cartao" maxlength="16" required>
+            </div>
+
+            <div class="card-info">
+              <div class="form-field val">
+                <label for="validade_cartao">Validade:</label>
+                <input type="text" id="validade_cartao" name="validade_cartao" placeholder="MM/AA" maxlength="5"
+                  required>
+              </div>
+
+              <div class="form-field cvv">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" maxlength="3" required>
+              </div>
+            </div>
+
+
+
+
+
+          </form>
+        </div>
+
+
+
+      </div>
+
+    </section>
+
+  </main>
+  <footer id="footer-page">
+    <section id="footer-container">
+    <div id="footer-links">
+        <div class="row">
+          <!-- Bloco 1  ROW 1-->
+          <div class="col-equalizer">
+              <div class="block-title">
+                <p>Loja</p>
+              </div>
+              <div class="block-content">
+                <ul class="lista-footer">
+                  <li><a href="speakwithus.html">Meu Cadastro</a></li>
+                  <li><a href="adm.html">Meus Pedidos</a></li>
+                  <li><a href="aboutus.html">Segurança e Privacidade</a></li>
+                  <li><a href="aboutus.html">Condições e Regulamentos</a></li>
+                  <li><a href="speakwithus.html">Trocas e Devoluções</a></li>
+                  <li><a href="speakwithus.html">Rastrear Pedido</a></li>
+                </ul>
+              </div>
+          </div>
+          <!-- Bloco 2 -->
+          <div class="col-equalizer">
+              <div class="block-title">
+                <p>Institucional</p>
+              </div>
+              <div class="block-content">
+                <ul class="lista-footer">
+                  <li><a href="aboutus.html">Quem Somos</a></li>
+                  <li><a href="aboutus.html">Visualizar Catálogo de Fornecedores</a></li>
+                  <li><a href="aboutus.html">Travalhe Conosco</a></li>
+                  <li><a href="speakwithus.html">Perguntas Frequentes</a></li>
+                  <li><a href="aboutus.html">Blog</a></li>
+                </ul>
+              </div>
+          </div>
+          <!-- Bloco 3 -->
+          <div class="col-equalizer">
+              <div class="block-attendence">
+                <div class="block-title"><p>Atendimento</p></div>
+                <div class="block-content">
+                  <ul class="lista-footer">
+                    <li>Dias Úteis: 08h30 às 17h00</li>
+                    <li><a href="speakwithus.html">Central de Atendimento</a></li>
+                    <li><a href="speakwithus.html">atendimento@iluminacasa.com.br</a></li>
+                    <li><a href="speakwithus.html">0800 456 1234</a></li>
+                    <li><a href="speakwithus.html">(19) 123456-1149</a></li>
+                    <li><a href="speakwithus.html">(54) 5243243-5324</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="block-whatsapp">
+                <div class="block-title">
+                  <p>Whatsapp e Orçamentos</p>
+                </div>
+                <div class="block-content">
+                  <ul class="lista-footer">
+                    <li><a href="speakwithus.html">Enviar Orçamento</a></li>
+                    <li><a href="speakwithus.html">(42)1345432-5324</a></li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          <!-- Bloco 4 -->
+          <div class="col-equalizer">
+              <div class="block-title">
+                <p>Siga a Gente!</p>
+              </div>
+              <div class="block-content">
+                <ul class="nav-link-socials">
+                  <li><a href="aboutus.html" title="Instagram"><img src="imagens esmaltes/icons8-insta.svg" alt="Instagram"></a></li>
+                  <li><a href="aboutus.html" title="Pinterest"><img src="imagens esmaltes/icons8-pinterest.svg" alt="Pinteret"></a></li>
+                  <li><a href="aboutus.html" title="Facebook"><img src="imagens esmaltes/icons8-facebook-novo.svg" alt="Facebook"></a></li>
+                  <li><a href="aboutus.html" title="X"><img src="imagens esmaltes/icons8-twitter.svg" alt="Twitter/X"></a></li>
+                  <li><a href="aboutus.html" title="youtube"><img src="imagens esmaltes/icons8-youtube.svg" alt="Youtube"></a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+        <!-- Bloco 5 - ROW2 -->
+        <div class="row">
+          <div class="row-container">
+            <div class="block-title">
+              <p>Formas de Pagamento</p>
+            </div>
+            <div class="block-content">
+              <ul class="nav-banks-socials">
+                <li class="bancos"><img src="images/footer-images/other-images/santander.png" alt="Banco Santander" class="san" title="Banco Santander"></li>
+                <li class="bancos"><img src="images/footer-images/other-images/bradesco.png" alt="Banco Bradesco" class="bra" title="Banco Bradesco"></li>
+                <li class="bancos"><img src="images/footer-images/other-images/mastercard.png" alt="Cartão MasterCard" class="mas" title="Cartão MasterCard"></li>
+                <li class="bancos"><img src="images/footer-images/other-images/pix.jpg" alt="Pix" class="pix" title="Pix"></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row-container">
+            <div class="block-title">
+              <p>Segurança e Confiabilidade</p>
+            </div>
+          </div>
+        </div>
+  </section>
+  <!-- Bloco para inserir o Copyright da página -->
+    <section id="footer-copyright">
+      <div id="footer-copyright-container">
+        <p class="texto-footer-copyright">Descubra a beleza nas cores! Aqui você encontra esmaltes exclusivos e personalizados, além de itens minimalistas para unhas. Dúvidas? Entre em contato conosco! 🌸 Transforme suas unhas em arte.</p>
+      </div>
+    </section>
+  </footer>
+
+</body>
+</html>
+
+  

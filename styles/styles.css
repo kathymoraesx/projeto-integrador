@@ -1,5 +1,10 @@
 /* CSS dos Componentes do Projeto - Utilize o inspecionar elementos antes de modificar os valores */
 
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 /* Envio de Feedbacks */
 #send-feedback-form{
     display: flex;
@@ -363,7 +368,7 @@ text-align: center;
     font-size: 26px;
 }
 /* Banners página inicial */
-.header-banner-container{
+.gallery-img.banner{
     display: flex;
     width: 100%;
     height: 600px; 
@@ -372,33 +377,30 @@ text-align: center;
     background-image: url(../imagens/molde\ redondo.jpeg);
     background-size: contain;
     background-repeat: no-repeat;
-    -webkit-box-shadow: 0px 1px 52px -7px var(--box-shadow-darkmode);
-    -moz-box-shadow: 0px 1px 52px -7px var(--box-shadow-darkmode);
-    box-shadow: 0px 1px 52px -7px var(--box-shadow-darkmode);
+ 
 }
+
+/* BANNERS PRINCIPAIS DE ESMALTE */
+
 .banner-container1{
     display: flex;
     width: 100%;
     height: 600px;
     margin-top: 30px;
-    background-image: url("../images/section_banner1.jpg");
+    background-image: url("../images/section_banner1\ \(2\).jpg");
     background-size: contain;
     background-repeat: no-repeat;
-    -webkit-box-shadow: 0px 1px 52px -7px var(--box-shadow-darkmode);
-    -moz-box-shadow: 0px 1px 52px -7px var(--box-shadow-darkmode);
-    box-shadow: 0px 1px 52px -7px var(--box-shadow-darkmode);
+    
 }
 .banner-container2{
     display: flex;
     width: 100%;
     height: 600px;
     margin-top: 30px;
-    background-image: url("../images/section_banner2.jpg");
+    background-image: url("../images/section-banner2.jpeg");
     background-size: contain;
     background-repeat: no-repeat;
-    -webkit-box-shadow: 0px 1px 52px -7px var(--box-shadow-darkmode);
-    -moz-box-shadow: 0px 1px 52px -7px var(--box-shadow-darkmode);
-    box-shadow: 0px 1px 52px -7px var(--box-shadow-darkmode);
+  
 }
 
 /*  */

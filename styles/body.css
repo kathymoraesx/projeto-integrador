@@ -27,7 +27,7 @@ body{
     /* LightMode */
     /* Header */
     --bg-variant-header: #e7b2cd;
-    --font-color-header: #111111;
+    --font-color-header: #070404;
     /* Main */
     --bg-color: rgb(255, 255, 255);
     --font-color: rgb(0, 0, 0);
@@ -36,7 +36,7 @@ body{
     /* Botão */
     --btn-color: rgb(255, 255, 255);
     --btn-font-color: #111111;
-    --btn-variant: #270021;
+    --btn-variant: #d4b6c8;
     --btn-darkmode: black;
     /* Footer */
     --bg-variant-header: #f0e7f1;
@@ -53,10 +53,10 @@ body{
     --cancel-feedback-btn-hover: rgb(177, 140, 212);
 
     /* Opções Frete */
-    --freight-1:#FFF8F0;
-    --freight-2:#f3ece3;
-    --freight-3:#dfd5c9;
-    --freight-4:#c5beb5;
+    --freight-1:#dba3b9a2;
+    --freight-2:#dba3b960;
+    --freight-3:#dba3b931;
+    --freight-4:#dba3b910;
 }
 .darkmode{
     transition: 0.4s;
@@ -71,9 +71,9 @@ body{
     --bg-variant: rgb(5, 5, 5);
     --border-color: #ffffff;
     /* Botão */
-    --btn-color: rgb(0, 0, 0);
+    --btn-color: rgb(27, 21, 21);
     --btn-font-color: #ffffff;
-    --btn-variant: #2e2c2c;
+    --btn-variant: #1b1717;
     --btn-darkmode: rgb(255, 255, 255);
     /* Footer */
    
@@ -85,9 +85,10 @@ body{
 
     
     /* Opções Frete */
-    --freight-1:#7c1123;
-    --freight-2:#812736;
-    --freight-3:#643039;
-    --freight-4:#80454e;
+
+    --freight-1:#3a0e33;
+    --freight-2:#492744e7;
+    --freight-3:#663c5fd2;
+    --freight-4:#774e70;
     
 }
